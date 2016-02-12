@@ -4,9 +4,9 @@ class Model
     public function __construct()
     {
         $dbhost = 'localhost';
-        $dbname = 'db_workshop';
+        $dbname = 'simple_blog';
         $dbuser = 'root';
-        $dbpass = 'programmer';
+        $dbpass = 'root';
 
         $this->db = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpass);
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
